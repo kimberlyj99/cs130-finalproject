@@ -18,17 +18,16 @@ body {
 
 header {
     grid-area: title;
-    background-color: #FFD4D4;
-    color:white;
+    color:#020202;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 30px;
 }
 
 h1 {
     font-family: 'Petit Formal Script', cursive;
-    font-size: 70px;
+    font-size: 100px;
 }
 
 h2 {
@@ -43,6 +42,7 @@ a {
     display: flex;
     justify-content: center;
     margin-right: 25px;
+    color: #F08CAE;
 
 }
 
@@ -66,7 +66,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    color: #D1345B;
+    color: #020202;
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -79,7 +79,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #D1345B;
+    color: #020202;
     margin-right: 75px;
     margin-left: 75px;
     margin-top: 20px;
@@ -90,7 +90,39 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #D1345B;
+    color: #020202;
 
 }
 
+@media (max-width: 1050px) {
+    h1 {
+       font-size: 60px;
+    }
+
+    header {
+        padding: 10px;
+        margin-top: 30px;
+        height: 80px;
+    }
+
+    .navbar {
+        padding: 0px;
+        margin-top: 0px;
+        height: 20px;
+    }
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 45px;
+    }
+    header {
+        padding: 10px;
+        margin-top: 40px;
+        height: 60px;
+    }
+
+    .navbar {
+        padding: 0px;
+        margin-top: 0px;
+        height: 20px;
+    }

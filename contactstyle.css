@@ -18,17 +18,16 @@ body {
 
 header {
     grid-area: title;
-    background-color: #FFD4D4;
-    color:white;
+    color:#020202;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 30px;
 }
 
 h1 {
     font-family: 'Petit Formal Script', cursive;
-    font-size: 95px;
+    font-size: 100px;
 }
 
 h2 {
@@ -43,27 +42,35 @@ a {
     display: flex;
     justify-content: center;
     margin-right: 25px;
+    color: #F08CAE;
 
 }
 main {
     grid-area: about;
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:  
+    "email"
+    "linkedin"
+    "instagram";
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 40px;
 }
 
+#email {
+    grid-area: email;
+}
 
-#about {
-    grid-area: aboutme;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #D1345B;
-    margin-right: 75px;
-    margin-left: 75px;
-    margin-top: 20px;
+#linkedin {
+    grid-area: linkedin;
+}
+
+#instagram {
+    grid-area: instagram;
 }
 
 
@@ -72,10 +79,27 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    color: #D1345B;
+    color: #020202;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
+@media (max-width: 1050px) {
+    h1 {
+       font-size: 60px;
+    }
+
+    header {
+        padding: 10px;
+        margin-top: 30px;
+        height: 80px;
+    }
+
+    .navbar {
+        padding: 0px;
+        margin-top: 0px;
+        height: 20px;
+    }

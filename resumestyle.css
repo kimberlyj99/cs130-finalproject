@@ -18,17 +18,16 @@ body {
 
 header {
     grid-area: title;
-    background-color: #FFD4D4;
-    color:white;
+    color:#020202;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-top: 30px;
 }
 
 h1 {
     font-family: 'Petit Formal Script', cursive;
-    font-size: 95px;
+    font-size: 100px;
 }
 
 h2 {
@@ -43,18 +42,19 @@ a {
     display: flex;
     justify-content: center;
     margin-right: 25px;
-
+    color: #F08CAE;
 }
 
 main {
     grid-area: about;
-    color: #D1345B;
+    color: #020202;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
+    size: 500px;
 }
 
 .navbar {
@@ -62,10 +62,11 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    color: #D1345B;
+    color: #020202;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
