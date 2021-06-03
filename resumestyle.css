@@ -48,7 +48,6 @@ a {
 main {
     grid-area: about;
     color: #020202;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,3 +69,20 @@ main {
     margin-top: 20px;
 }
 
+img {
+    width: 1000px;
+}
+
+@media (max-width: 1050px) {
+    img {
+        width: 650px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    img {
+        width: 450px;
+    }
+
+}

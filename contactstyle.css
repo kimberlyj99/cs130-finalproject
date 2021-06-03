@@ -41,10 +41,10 @@ a {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    margin-right: 25px;
-    color: #F08CAE;
-
+    align-items: center;
+    color:#020202;
 }
+
 main {
     grid-area: about;
     display: grid;
@@ -63,16 +63,56 @@ main {
 
 #email {
     grid-area: email;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin: 20px;
+    margin-bottom: 0px;
 }
 
 #linkedin {
     grid-area: linkedin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin: 20px;
+    margin-top: 0px;
+    margin bottom: 0px;
 }
 
 #instagram {
     grid-area: instagram;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin: 20px;
+    margin-top: 0px;
+    margin bottom: 0px;
 }
 
+img {
+    width: 200px;
+    margin: 20px;
+}
+
+#email img {
+    margin-left: -20px;
+}
+
+nav > a {
+    margin-right: 25px;
+    color: #F08CAE;
+}
+
+#email p {
+    margin-left: 170px;
+}
 
 .navbar {
     grid-area: navigation;
@@ -85,6 +125,48 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large
+}
+
+#linkedin a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large
+}
+
+#linkedin img {
+    margin-left: 30px;
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#linkedin p {
+    margin-left: 80px;
+}
+
+#instagram a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large
+}
+
+#instagram img {
+    margin-left: 195px;
+    width: 175px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#instagram p {
+    margin: 40px;
+    margin-right: 80px;
+    margin-left: 80px; 
 }
 
 @media (max-width: 1050px) {

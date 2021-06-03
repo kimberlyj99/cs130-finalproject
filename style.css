@@ -80,9 +80,10 @@ main {
     justify-content: center;
     align-items: center;
     color: #020202;
-    margin-right: 75px;
-    margin-left: 75px;
-    margin-top: 20px;
+    margin-right: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: x-large;
 }
 
 #photo {
@@ -91,7 +92,11 @@ main {
     justify-content: center;
     align-items: center;
     color: #020202;
+}
 
+img {
+    width: 350px;
+    padding-left: 20px;
 }
 
 @media (max-width: 1050px) {
@@ -111,6 +116,16 @@ main {
         height: 20px;
     }
 
+    img {
+        width: 250px;
+    }
+
+    #about {
+        margin-right: 60px;
+        margin-left: 10px;
+        font-size: large;
+    }
+
 @media (max-width: 650px) {
     h1 {
         font-size: 45px;
@@ -125,4 +140,14 @@ main {
         padding: 0px;
         margin-top: 0px;
         height: 20px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    #about {
+        margin-right: 60px;
+        margin-left: 10px;
+        font-size: medium;
     }
